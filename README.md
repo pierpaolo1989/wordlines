@@ -12,3 +12,4 @@ To run locally, change the database properties inside application.properties fil
 </ul>
 
 Therefore, this project uses Lombok. To install it, check documentation at:
+<a href="https://projectlombok.org/setup/">Lombok installation</a>
