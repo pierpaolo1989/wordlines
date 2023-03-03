@@ -1,2 +1,4 @@
 # wordlines
-Quiz game 
+Simple quiz game similar to italian TV quiz game "Reazione a Catena"
+
+
