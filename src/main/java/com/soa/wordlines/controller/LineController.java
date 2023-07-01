@@ -33,7 +33,7 @@ public class LineController {
 			status = HttpStatus.OK;
 		} catch (Exception e) {
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
-			logger.error("ERROR :: "+e.getMessage());
+			logger.error("ERROR :: {}", e.getMessage());
 		}
 		return new ResponseEntity<List<LineDto>>(lines, status);
 	}

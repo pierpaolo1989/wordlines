@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.soa.wordlines.model.LineIT;
 
 @Repository
-public interface JpaRepositoryLine extends CrudRepository<LineIT, Long>{
+public interface JpaRepositoryLine extends CrudRepository<LineIT, Long> {
 
 }
