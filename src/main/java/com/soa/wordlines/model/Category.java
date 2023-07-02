@@ -6,8 +6,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -20,13 +18,10 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="chain_eng")
-public class LineENG implements Serializable {
+@Table(name="categories")
+public class Category implements Serializable {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -2848938415813816591L;
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@Column
@@ -34,17 +29,10 @@ public class LineENG implements Serializable {
 	private Long id;
 	
 	@Column
-	private String p1;
+	private String code;
 	
 	@Column
-	private String p2;
-	
-	@Column
-	private String p3;
-	
-	@ManyToOne
-	@JoinColumn(name = "category_code", referencedColumnName = "code")
-	private Category category;
+	private String description;
 	
 
 }
