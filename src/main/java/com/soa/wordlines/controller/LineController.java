@@ -22,20 +22,22 @@ public class LineController {
 	private static final Logger logger = LoggerFactory.getLogger(LineController.class.getName());
 
 	@Autowired
-	private LineService lineservice;
+	private LineService lineService;
+
 
 	@RequestMapping(value = "/lines/{lang}", method = RequestMethod.GET)
-	public ResponseEntity<List<LineDto>> getLines(@PathVariable("lang") String language){
+	public ResponseEntity<List<LineDto>> getLines(@PathVariable("lang") String language) {
+		
 		HttpStatus status = null;
 		List<LineDto> lines = new ArrayList<LineDto>();
 		try {
-			lines = lineservice.getLines(language);
+			lines = lineService.getLines(language);
 			status = HttpStatus.OK;
+			lines = lineService.getLines(language);
 		} catch (Exception e) {
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 			logger.error("ERROR :: {}", e.getMessage());
 		}
 		return new ResponseEntity<List<LineDto>>(lines, status);
 	}
-
 }
