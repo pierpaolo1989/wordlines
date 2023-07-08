@@ -4,6 +4,10 @@ CREATE SEQUENCE chain_it_id_sequence
 INCREMENT 1
 START 1;  
 
+CREATE SEQUENCE chain_eng_id_sequence  
+INCREMENT 1
+START 1;  
+
 --italy
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'VERDE', 'INSALATA','RUSSA','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TAPPETO', 'POLVERE','LATTE','GENERAL');
@@ -73,6 +77,33 @@ INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CARTE', 'FASCICOLI','EDICOLA','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'FASCICOLI', 'EDICOLA','MADONNINA','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'MADONNINA', 'MILANO','LOMBARDIA','GENERAL');
+
+
+--england
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'FLEA', 'MARKET','CRASH','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'MARKET', 'CRASH','LAN','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'CRASH', 'LAN','CRAFT','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'LAN', 'CRAFT','TABLE','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'CRAFT', 'TABLE','MANNERS','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'AMERICAN', 'CHEESE','PIZZA','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'CRASHED', 'ICE','WATER','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'ICE', 'WATER','GARDEN','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'OPERATING', 'EXPENSE','ACCOUNT','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'CRACK', 'OPEN','SESAME','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'DISTANCE', 'RUNNING','WILD','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'OPEN', 'SESAME','STREET','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'BUBBLE', 'BATH','TUBE','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'BATH', 'TUB','STAINED','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'TUB', 'STAINED','TEETH','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'STREET', 'SMART','COOKIE','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'OFFICE', 'CHAIR','MAN','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'STAINED', 'TEETH','MARKS','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'HOT', 'COFFEE','SHOP','GENERAL');
+INSERT INTO chain_eng(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_eng_id_sequence')),'COFFEE', 'SHOP','AROUND','GENERAL');
+
+
+
+
 
 
 
