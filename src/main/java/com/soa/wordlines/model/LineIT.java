@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,7 +19,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="chainIT")
+@Table(name="chainIT", uniqueConstraints=
+@UniqueConstraint(columnNames={"p1", "p2", "p3"}))
 public class LineIT implements Serializable {
 	
 	/**
