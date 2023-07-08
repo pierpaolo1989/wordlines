@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,7 +21,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="chain_ru")
+@Table(name="chainIT", uniqueConstraints=
+@UniqueConstraint(columnNames={"p1", "p2", "p3"}))
 public class LineRU implements Serializable {
 	
 	/**
