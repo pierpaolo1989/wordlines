@@ -27,6 +27,10 @@ public class RateLimitInterceptor implements HandlerInterceptor {
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+		
+		if(true) {
+			return true;
+		}
 
 		String apiKey = request.getHeader(HEADER_API_KEY);
 
