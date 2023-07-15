@@ -19,7 +19,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="chainIT", uniqueConstraints=
+@Table(name="chain_it", uniqueConstraints=
 @UniqueConstraint(columnNames={"p1", "p2", "p3"}))
 public class LineIT implements Serializable {
 	

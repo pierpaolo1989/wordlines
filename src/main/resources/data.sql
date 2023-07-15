@@ -8,6 +8,12 @@ CREATE SEQUENCE chain_eng_id_sequence
 INCREMENT 1
 START 1;  
 
+CREATE UNIQUE INDEX idx_chain_it_bk
+ON chain_it(p1,p2,p3);
+
+CREATE UNIQUE INDEX idx_chain_it_bk
+ON chain_eng(p1,p2,p3);
+
 --italy
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'VERDE', 'INSALATA','RUSSA','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TAPPETO', 'POLVERE','LATTE','GENERAL');
@@ -77,6 +83,84 @@ INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CARTE', 'FASCICOLI','EDICOLA','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'FASCICOLI', 'EDICOLA','MADONNINA','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'MADONNINA', 'MILANO','LOMBARDIA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PARENTE', 'STRETTO','PONTE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'STRETTO', 'PONTE','CHITARRA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PONTE', 'CHITARRA','SPAGHETTI','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CHITARRA', 'SPAGHETTI','CAPELLI','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'NELLA GIUNGLA', 'TIGRE','ZANZARA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TIGRE', 'ZANZARA','NOTTE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'ZANZARA', 'NOTTE','TURNO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'NOTTE', 'TURNO','VOLTA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TURNO', 'VOLTA','TUTTE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PALLA', 'MEDICA','GUARDIA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'MEDICA', 'GUARDIA','LIVELLO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'GUARDIA', 'LIVELLO','QUADRO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'LIVELLO', 'QUADRO','CAVALLETTO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'QUADRO', 'CAVALLETTO','MOTOCICLETTA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'AMBASCIATOR', 'PENA','ANIMA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PENA', 'ANIMA','GEMELLA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'AMBASCIATOR', 'PENA','CAPITALE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PENA', 'CAPITALE','ROMA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CRETA', 'GRECA','ORNAMENTO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'GRECA', 'ORNAMENTO','BRACCIALE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'ORNAMENTO', 'BRACCIALE','TENNIS','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'BRACCIALE', 'TENNIS','SERVIZIO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TENNIS', 'SERVIZIO','TAVOLO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'ILLUMINAZIONE', 'INTUIZIONE','FELICE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'FELICE', 'CONTENTA','GODE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PENSIERO', 'SPINA','RUBINETTO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CONTENTA', 'GODE','TERZO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'COPERTINA', 'BAMBINO','ETERNO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'BAMBINO', 'ETERNO','SECONDO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'ETERNO', 'SECONDO','FINE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'SECONDO', 'FINE','MONDO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'FINE', 'MONDO','NUOVO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'FESTA', 'TRENINO','PLASTICO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TRENINO', 'PLASTICO','CIOCCOLATO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PLASTICO', 'CIOCCOLATO','FABBRICA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CIOCCOLATO', 'FABBRICA','DIFETTO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'FABBRICA', 'DIFETTO','ARROTONDAMENTO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'LOUVRE', 'PIRAMIDE','ALIMENTARE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'LOUVRE', 'PIRAMIDE','EGITTO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'LOUVRE', 'PIRAMIDE','FINANZIARIA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PIRAMIDE', 'ALIMENTARE','FUOCO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'ALIMENTARE', 'FUOCO','MESSA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'FUOCO', 'MESSA','POSTA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'MESSA', 'POSTA','SCARICARE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'RETTA', 'LINEA','CONFINE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'LINEA', 'CONFINE','TERMINE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'GOLFO', 'PERSICO','PESCE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PESCE', 'MUTO','SILENZIO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PERSICO', 'PESCE','MUTO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'SILENZIO', 'ASSORDANTE','FISCHIO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'SPEGNI LE LUCI', 'INTERRUTTORE','DITO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'INTERRUTTORE', 'DITO','POLVERE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'DITO', 'POLVERE','CACAO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'POLVERE', 'CACAO','BURRO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CACAO', 'BURRO','PANE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'VIAGGIO', 'VUOTO','MEMORIA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'VUOTO', 'MEMORIA','SCHEDA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'MEMORIA', 'SCHEDA','BIANCA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'SCHEDA', 'BIANCA','NOTTE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'BIANCA', 'NOTTE','ZONA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PISTA', 'CACCIATORE','TESTE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CACCIATORE', 'TESTE','TESTIMONE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TESTE', 'TESTIMONE','PASSAGGIO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TESTIMONE', 'PASSAGGIO','SEGRETO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PASSAGGIO', 'SEGRETO','SUCCESSO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PASTA', 'NORMA','REGOLA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'NORMA', 'REGOLA','FUORIGIOCO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'GENTE', 'FIUME','PONTI','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'FIUME', 'PONTI','TAGLIARE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PONTI', 'TAGLIARE','STRADA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TAGLIARE', 'STRADA','CATTIVA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'STRADA', 'CATTIVA','LUCE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'ROSSI', 'COGNOME','DOPPIO','GENERAL');
+
+
+
+
+
 
 
 --england

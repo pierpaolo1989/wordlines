@@ -33,7 +33,6 @@ public class LineController {
 		try {
 			lines = lineService.getLines(language);
 			status = HttpStatus.OK;
-			lines = lineService.getLines(language);
 		} catch (Exception e) {
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 			logger.error("ERROR :: {}", e.getMessage());
