@@ -24,7 +24,6 @@ public class LineController {
 	@Autowired
 	private LineService lineService;
 
-
 	@RequestMapping(value = "/lines/{lang}", method = RequestMethod.GET)
 	public ResponseEntity<List<LineDto>> getLines(@PathVariable("lang") String language) {
 		
