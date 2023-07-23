@@ -63,4 +63,10 @@ public class LineServiceImpl implements LineService {
 		return dtos;
 	}
 
+	@Override
+	public void addLine(LineDto line) {
+		repoLine.save(new LineIT());
+		
+	}
+
 }
