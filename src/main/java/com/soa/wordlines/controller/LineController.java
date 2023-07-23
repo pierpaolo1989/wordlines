@@ -27,7 +27,7 @@ public class LineController {
 	@Autowired
 	private LineService lineService;
 
-
+  
 	@GetMapping(value = "/{lang}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<LineDto>> getLines(@PathVariable("lang") String language) {
 
