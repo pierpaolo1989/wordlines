@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.soa.wordlines.dto.AddLineDto;
 import com.soa.wordlines.dto.LineDto;
 import com.soa.wordlines.service.LineService;
 
@@ -44,7 +45,7 @@ public class LineController {
 	}
 
 	@PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Void> addLine(@RequestBody LineDto requestLine) {
+	public ResponseEntity<Void> addLine(@RequestBody AddLineDto requestLine) {
 		log.debug("addLine :: Request :: {}", requestLine.toString());
 		lineService.addLine(requestLine);
 		return ResponseEntity.ok().build();

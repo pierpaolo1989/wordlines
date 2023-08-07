@@ -2,15 +2,15 @@ package com.soa.wordlines.dto;
 
 import java.io.Serializable;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
-@Data
 @ToString
-@NoArgsConstructor
-@AllArgsConstructor
+@SuperBuilder
+@Data
+@RequiredArgsConstructor
 public class LineDto implements Serializable {
 
 	/**

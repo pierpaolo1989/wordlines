@@ -1,4 +1,4 @@
-package com.soa.wordlines.repositories;
+package com.soa.wordlines.dao;
 
 import java.util.List;
 

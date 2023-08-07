@@ -21,8 +21,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="chainIT", uniqueConstraints=
-@UniqueConstraint(columnNames={"p1", "p2", "p3"}))
+@Table(name="chain_ru", uniqueConstraints=
+@UniqueConstraint(columnNames = {"p1", "p2", "p3"}))
 public class LineRU implements Serializable {
 	
 	/**
@@ -35,14 +35,17 @@ public class LineRU implements Serializable {
 	@GeneratedValue
 	private Long id;
 	
-	@Column
+	@Column(nullable = false)
 	private String p1;
 	
-	@Column
+	@Column(nullable = false)
 	private String p2;
 	
-	@Column
+	@Column(nullable = false)
 	private String p3;
+	
+	@Column(name = "is_approved", columnDefinition = "boolean default false")
+	private boolean approved;
 	
 	@ManyToOne
 	@JoinColumn(name = "category_code", referencedColumnName = "code")

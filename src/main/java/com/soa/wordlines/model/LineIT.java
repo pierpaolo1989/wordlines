@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -22,7 +23,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Entity
 @Table(name="chain_it", uniqueConstraints=
-@UniqueConstraint(columnNames={"p1", "p2", "p3"}))
+@UniqueConstraint(columnNames = {"p1", "p2", "p3"}))
 public class LineIT implements Serializable {
 	
 	/**
@@ -32,17 +33,20 @@ public class LineIT implements Serializable {
 
 	@Id
 	@Column
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
 	
-	@Column
+	@Column(nullable = false)
 	private String p1;
 	
-	@Column
+	@Column(nullable = false)
 	private String p2;
 	
-	@Column
+	@Column(nullable = false)
 	private String p3;
+	
+	@Column(name = "is_approved", columnDefinition = "boolean default false")
+	private boolean approved;
 	
 	@ManyToOne
 	@JoinColumn(name = "category_code", referencedColumnName = "code")
