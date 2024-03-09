@@ -243,6 +243,12 @@ INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'INTERNO', 'NUMERO','LEGALE','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'NUMERO', 'LEGALE','AVVOCATO','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'AVVOCATO', 'FORO','ROMANO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'ADOLESCENZA', 'PERIODO','ASPETTATIVA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PERIODO', 'ASPETTATIVA','SPERANZA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'ASPETTATIVA', 'SPERANZA','SPIRAGLIO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'SPERANZA', 'SPIRAGLIO','SPIFFERO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'SPIRAGLIO', 'SPIFFERO','SEGRETO','GENERAL');
+
 
 
 --england
