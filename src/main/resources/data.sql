@@ -234,8 +234,15 @@ INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'TEMPI', 'NOTTE','CONSIGLIO','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'NOTTE', 'CONSIGLIO','ACQUISTI','GENERAL');
 INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CONSIGLIO', 'ACQUISTI','ON-LINE','GENERAL');
-
-
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CAREZZA', 'VENTO','PAROLE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'VENTO', 'PAROLE','GIOCO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'PAROLE', 'GIOCO','CORRETTO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'GIOCO', 'CORRETTO','ESERCIZIO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'CORRETTO', 'ESERCIZIO','FORMA','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'SORPRESA', 'INTERNO','NUMERO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'INTERNO', 'NUMERO','LEGALE','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'NUMERO', 'LEGALE','AVVOCATO','GENERAL');
+INSERT INTO chain_it(id, p1,p2, p3, category_code) VALUES((SELECT nextval('chain_it_id_sequence')),'AVVOCATO', 'FORO','ROMANO','GENERAL');
 
 
 --england
